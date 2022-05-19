@@ -1,0 +1,18 @@
+body {
+  overflow-x: hidden;
+}
+
+#car,
+.light {
+  position: absolute;
+}
+
+.light {
+  height: 100px;
+  left: 500px;
+}
+
+#car {
+  height: 150px;
+  top: 50px;
+}
