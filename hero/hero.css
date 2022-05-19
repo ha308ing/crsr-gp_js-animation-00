@@ -1,0 +1,54 @@
+body {
+  background-color: #a3d5d3;
+}
+
+.controls {
+  position: absolute;
+}
+
+#hero {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 600px;
+}
+
+.actors-switched #hero {
+  transform: rotateY(180deg);
+  left: 800px;
+}
+
+#villain {
+  position: absolute;
+  left: 800px;
+  top: 90px;
+  height: 500px;
+}
+
+.actors-switched #villain {
+  transform: rotateY(180deg);
+  left: 10px;
+}
+
+#lightning {
+  position: absolute;
+  top: 320px;
+  left: 290px;
+  height: 120px;
+  width: 120px;
+}
+
+.actors-switched #lightning {
+  left: 800px;
+  transform: rotateY(180deg);
+}
+
+.lightning-reversed #lightning {
+  left: 800px;
+  transform: rotateY(180deg);
+}
+
+.actors-switched.lightning-reversed #lightning {
+  left: 200px;
+  transform: none;
+}
