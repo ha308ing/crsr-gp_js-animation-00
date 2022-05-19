@@ -1,0 +1,64 @@
+body {
+  overflow: hidden;
+}
+
+#spikes {
+  position: absolute;
+  top: 15px;
+  width: 80vw;
+  left: 10vw;
+}
+
+.balloon {
+  position: absolute;
+  top: 95vh;
+  width: 15vw;
+}
+
+.balloon-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 20%;
+  left: 0;
+}
+
+/*
+  total balloons width:
+  3 * 15 + 4 * 5 = 65 but 55!
+*/
+
+.balloon--red {
+  /* ( 100 - 65 ) / 2 */
+  left: 22.5vw;
+}
+
+.balloon--green {
+  /* 22.5 + 15 + 5 = 25 */
+  left: 42.5vw;
+}
+
+.balloon--yellow {
+  /* 22.5 + 15 + 5 + 15 + 5 = 45 */
+  left: 62.5vw;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2b2a2ad3;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image {
+  width: 30vh;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
